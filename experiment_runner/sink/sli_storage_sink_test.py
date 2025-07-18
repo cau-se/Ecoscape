@@ -1,4 +1,4 @@
-from experiment_runner.sink.sli_storage_sink import SliStorageSink
+from sink.sli_storage_sink import SliStorageSink
 
 if __name__ == '__main__':
     testee = SliStorageSink("abcde", "test", False)

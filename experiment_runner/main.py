@@ -1,25 +1,19 @@
 import string
-import time
 import random
 
 import yaml
 from prometheus_api_client import PrometheusConnect
 
-from experiment_runner.aggregator.weighted_slo_aggregator import WeightedSloAggregator
-from experiment_runner.config.experiment_directory_parser import ExperimentDirectoryParser
+from config.experiment_directory_parser import ExperimentDirectoryParser
 
-from experiment_runner.config.experiment_duration_parser import ExperimentDurationParser
-from experiment_runner.ecoscape_client import EcoscapeClient
-from experiment_runner.ecoscape_client_mode_aware import EcoscapeClientModeAware
-from experiment_runner.ecoscape_core import EcoscapeCore
-from experiment_runner.mode.mode import ModeFullExperimentRun
-from argparse import ArgumentParser
+from config.experiment_duration_parser import ExperimentDurationParser
+from ecoscape_core import EcoscapeCore
 
-from experiment_runner.query.generic_query import GenericQuery
-from experiment_runner.scenario import SLO
-from experiment_runner.sink.sli_storage_sink import SliStorageSink
-from experiment_runner.sink.slo_value_printer_sink import SloValuePrinterSink
-from experiment_runner.sink.slo_violation_score_sink import SloViolationScoreSink
+from query.generic_query import GenericQuery
+from scenario import SLO
+from sink.sli_storage_sink import SliStorageSink
+from sink.slo_value_printer_sink import SloValuePrinterSink
+from sink.slo_violation_score_sink import SloViolationScoreSink
 
 def arg_or_default(arg, default):
     if arg:
@@ -33,6 +27,7 @@ def generate_id(length=5):
 
 
 if __name__ == '__main__':
+    print("Started")
     with open("experiment_config/experiment_duration.yaml") as file:
         experiment_duration_config = yaml.safe_load(file)
 

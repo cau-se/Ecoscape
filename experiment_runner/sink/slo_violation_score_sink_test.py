@@ -1,5 +1,5 @@
-from experiment_runner.scenario import SLO
-from experiment_runner.sink.slo_violation_score_sink import SloViolationScoreSink
+from scenario import SLO
+from sink.slo_violation_score_sink import SloViolationScoreSink
 
 class MockSlo(SLO):
     def __init__(self, query, threshold, is_bigger_better):

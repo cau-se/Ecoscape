@@ -1,6 +1,6 @@
 import random
 
-from experiment_runner.sink.slo_visualizer_sink import SloVisualizerSink
+from sink.slo_visualizer_sink import SloVisualizerSink
 
 if __name__ == '__main__':
     sink = SloVisualizerSink("Hallo", False)

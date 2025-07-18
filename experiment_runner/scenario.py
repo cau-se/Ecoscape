@@ -2,9 +2,9 @@ import string
 from time import sleep
 from typing import Dict, List
 
-from experiment_runner.ecoscape_client_mode_aware import EcoscapeClientModeAware
-from experiment_runner.sink.slo_sink import SloSink
-from experiment_runner.slo import SLO
+from ecoscape_client_mode_aware import EcoscapeClientModeAware
+from sink.slo_sink import SloSink
+from slo import SLO
 
 class Scenario:
     def __init__(

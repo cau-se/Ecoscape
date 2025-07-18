@@ -1,5 +1,5 @@
-from experiment_runner.query.query import Query
-from experiment_runner.query.query_util import value_from_prometheus_result
+from query.query import Query
+from query.query_util import value_from_prometheus_result
 
 class GenericQuery(Query):
 

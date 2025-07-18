@@ -1,4 +1,4 @@
-from experiment_runner.query.query import Query
+from query.query import Query
 
 
 class QueryIncomingMessages(Query):

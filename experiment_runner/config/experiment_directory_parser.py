@@ -1,4 +1,4 @@
-from experiment_runner.config.directory_config import ExperimentDirectoryConfig
+from config.directory_config import ExperimentDirectoryConfig
 
 
 class ExperimentDirectoryParser:

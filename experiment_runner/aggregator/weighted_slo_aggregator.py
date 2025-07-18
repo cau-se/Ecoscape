@@ -1,6 +1,6 @@
 from typing import List
 
-from experiment_runner.sink.slo_violation_score_sink import SloViolationScoreSink
+from sink.slo_violation_score_sink import SloViolationScoreSink
 
 class WeightedSloAggregator:
 

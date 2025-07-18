@@ -3,14 +3,14 @@ import string
 import time
 from typing import Dict, List
 
-from experiment_runner.aggregator.weighted_slo_aggregator import WeightedSloAggregator
-from experiment_runner.config.directory_config import ExperimentDirectoryConfig
-from experiment_runner.config.duration_config import ExperimentDurationConfig
-from experiment_runner.ecoscape_client import EcoscapeClient
-from experiment_runner.ecoscape_client_mode_aware import EcoscapeClientModeAware
-from experiment_runner.mode.mode import ModeFullExperimentRun
-from experiment_runner.scenario import Scenario, SLO
-from experiment_runner.sink.slo_sink import SloSink
+from aggregator.weighted_slo_aggregator import WeightedSloAggregator
+from config.directory_config import ExperimentDirectoryConfig
+from config.duration_config import ExperimentDurationConfig
+from ecoscape_client import EcoscapeClient
+from ecoscape_client_mode_aware import EcoscapeClientModeAware
+from mode.mode import ModeFullExperimentRun
+from scenario import Scenario, SLO
+from sink.slo_sink import SloSink
 
 class EcoscapeCore:
     def __init__(

@@ -1,7 +1,7 @@
 from time import sleep
 
-from experiment_runner.ecoscape_client import EcoscapeClient
-from experiment_runner.mode.mode import Mode
+from ecoscape_client import EcoscapeClient
+from mode.mode import Mode
 
 class EcoscapeClientModeAware():
 

@@ -2,7 +2,7 @@ import sys
 from time import sleep
 
 from prometheus_api_client import PrometheusConnect
-from experiment_runner.query.query import Query
+from query.query import Query
 
 
 class Experiment:

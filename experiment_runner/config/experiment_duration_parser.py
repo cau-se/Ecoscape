@@ -1,4 +1,4 @@
-from experiment_runner.config.duration_config import ExperimentDurationConfig
+from config.duration_config import ExperimentDurationConfig
 
 class ExperimentDurationParser:
 

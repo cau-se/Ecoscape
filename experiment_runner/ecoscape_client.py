@@ -1,5 +1,5 @@
-from experiment_runner.config.directory_config import ExperimentDirectoryConfig
-from experiment_runner.k8s_client import K8sClient
+from config.directory_config import ExperimentDirectoryConfig
+from k8s_client import K8sClient
 
 class EcoscapeClient:
 

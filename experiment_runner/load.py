@@ -1,7 +1,7 @@
 import subprocess
 from time import sleep
 
-from experiment_runner.k8s_client import K8sClient
+from k8s_client import K8sClient
 
 
 class Load:

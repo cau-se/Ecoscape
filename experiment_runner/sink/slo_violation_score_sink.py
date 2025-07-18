@@ -1,4 +1,4 @@
-from experiment_runner.sink.slo_sink import SloSink
+from sink.slo_sink import SloSink
 
 class SloViolationScoreSink(SloSink):
 

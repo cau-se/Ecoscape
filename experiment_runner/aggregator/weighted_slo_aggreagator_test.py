@@ -1,6 +1,6 @@
-from experiment_runner.aggregator.weighted_slo_aggregator import WeightedSloAggregator
-from experiment_runner.sink.slo_sink import SloSink
-from experiment_runner.slo import SLO
+from aggregator.weighted_slo_aggregator import WeightedSloAggregator
+from sink.slo_sink import SloSink
+from slo import SLO
 
 
 class MockSloSink(SloSink):
