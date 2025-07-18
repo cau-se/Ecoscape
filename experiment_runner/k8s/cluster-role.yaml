@@ -1,0 +1,22 @@
+apiVersion: rbac.authorization.k8s.io/v1 
+kind: ClusterRole
+metadata:
+  name: ecoscape-cluster-role
+  namespace: ecoscape
+rules:                                 
+  - apiGroups:                         
+      - ""                             
+      - "apps"
+      - "kafka.strimzi.io"
+      - "monitoring.coreos.com"
+      - "chaos-mesh.org"
+    resources:
+      - "*"
+    verbs:                             
+      - "get"                          
+      - "list"                         
+      - "watch"                        
+      - "create"                       
+      - "update"                       
+      - "patch"                        
+      - "delete"

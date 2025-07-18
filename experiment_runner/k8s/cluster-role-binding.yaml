@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: ecoscape-clusterrolebinding
+  namespace: ecoscape
+subjects:
+  - kind: ServiceAccount 
+    name: ecoscape-sa
+    namespace: ecoscape
+roleRef:
+  kind: ClusterRole 
+  name: ecoscape-cluster-role
+  apiGroup: rbac.authorization.k8s.io 

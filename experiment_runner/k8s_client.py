@@ -8,7 +8,7 @@ from kubernetes import config
 
 class K8sClient:
     def __init__(self):
-        config.load_kube_config()
+        config.load_incluster_config()
 
         self.client = kubernetes.dynamic.DynamicClient(
             kubernetes.client.api_client.ApiClient()

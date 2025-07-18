@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecoscape
+  namespace: ecoscape
+  labels:
+    app: ecoscape 
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: ecoscape 
+  template: 
+    metadata:
+      labels:
+        app: ecoscape 
+    spec:
+      containers:
+        - name: ecoscape
+          image: hendrikreiter/ecoscape_bench:0.1.0
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: sut-config
+              mountPath: /app/build/sut
+            - name: load-config
+              mountPath: /app/build/load
+            - name: monitor-config
+              mountPath: /app/build/monitor
+            - name: chaos-config
+              mountPath: /app/build/chaos
+            - name: infra-config
+              mountPath: /app/build/infra
+          resources: 
+            limits:
+              memory: "1Gi" 
+              cpu: "1" 
+      serviceAccountName: ecoscape-sa
+      volumes:
+        - name: sut-config
+          configMap:
+            name: sut-config
+        - name: infra-config
+          configMap:
+            name: infra-config
+        - name: chaos-config
+          configMap:
+            name: chaos-config
+        - name: load-config
+          configMap:
+            name: load-config
+        - name: monitor-config
+          configMap:
+            name: monitor-config
