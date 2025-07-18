@@ -1,4 +1,5 @@
 buildc() {
+  mkdir -p build
   jsonnet $1 > build/config.json
 }
 

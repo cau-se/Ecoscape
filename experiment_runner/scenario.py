@@ -2,7 +2,6 @@ import string
 from time import sleep
 from typing import Dict, List
 
-from experiment_runner.ecoscape_client import EcoscapeClient
 from experiment_runner.ecoscape_client_mode_aware import EcoscapeClientModeAware
 from experiment_runner.sink.slo_sink import SloSink
 from experiment_runner.slo import SLO

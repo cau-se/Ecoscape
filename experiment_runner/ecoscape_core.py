@@ -58,8 +58,7 @@ class EcoscapeCore:
             print(score_sink.get_score())
 
         aggregator = WeightedSloAggregator(score_sinks, [0.5, 0.25, 0.25])
-        print(aggregator.get_aggregated_score())
-
+        print("Ecoscape score: ", aggregator.get_aggregated_score())
 
     def generate_id(self, length=5):
         characters = string.ascii_lowercase

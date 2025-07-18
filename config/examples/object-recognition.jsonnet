@@ -4,7 +4,7 @@
   infra: {
     base: import '../infra/infra.json',
     chaos: import '../infra/cpu-stress.json',
-    networkChaos: import '../infra/network-chaos.json'
+    #networkChaos: import '../infra/network-chaos.json'
   },
   data: {
     kafka: import '../kafka/kafka.json'

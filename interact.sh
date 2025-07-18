@@ -62,8 +62,8 @@ function ns() {
 #wget https://github.com/derailed/k9s/releases/download/v0.32.7/k9s_linux_amd64.deb && apt install ./k9s_linux_amd64.deb && rm k9s_linux_amd64.deb
 
 function build() {
-    chmod +x build-k8s.sh
-    ./build-k8s.sh
+    chmod +x build-new.sh
+    ./build-new.sh $1
     echo "Build Finished"
 }
 
